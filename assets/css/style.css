@@ -8,9 +8,12 @@ body {
     line-height: 34px;
     color: #1c1c1c;
     background: url("../images/dark-honeycomb.png");
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-
+ 
 .container {
     width: 100%;
     max-width: 960px;
@@ -112,6 +115,7 @@ footer {
 #main-container {
     padding-top: 130px;
     min-height: calc(100vh-70px);
+    flex: 1;
 }
 
 .main-section {
@@ -132,9 +136,8 @@ footer {
     border: 2px solid #bd5734; 
 }
 
-
-
 @media screen and (max-width: 980px) {
+    
 
 }
 
@@ -143,15 +146,39 @@ footer {
 }
 
 @media screen and (max-width: 640px) {
-    /* .banner { */
-        position: static;
-    }
+   #masthead {
+       position: static;
+   }
 
-    /* .container { */
-        width: 285px;
-        margin: 0;
-        
-        
-    }
+   #logo {
+       width: 100%;
+       font-size: 40px;
+       padding: 0 13px;
+   }
+
+   nav {
+       width: 100%;
+       font-size: 20px;
+       text-align: center;
+       padding-bottom: 2%; 
+       margin-bottom: 0; 
+   }
+
+
+   .container {
+       width: 640px;
+
+   }
+
+   #main-container {
+       width: 579px;
+       padding-top: 0;
+       margin-bottom: 10%;
+    
+   }
+
+   .footer {
+      padding-right: 80px;
+   }
 
 }

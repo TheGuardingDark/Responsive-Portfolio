@@ -2,99 +2,120 @@
     box-sizing: border-box;
 }
 
-.clearfix::after {
-    content: "";
-    display: block;
+body {
+    font-family: Arial, "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    background: url("../images/dark-honeycomb.png");
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+ 
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
     clear: both;
 }
 
-.banner {
-    background: rgb(65, 63, 63);
+
+
+
+h1 {
+    padding-bottom: 20px;
+    color: #7a3b2e;
+    font-size: 30px;
+    line-height: 49px;
     border-bottom: 3px solid #bd5734;
-    position: relative;
-    padding: 5px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
 }
 
-ul {
-    list-style-type: none;
-    overflow: hidden;
-    padding-bottom: 7px;
-    margin-right: 50px;
+
+
+#masthead {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    color: #ffffff;
+    background: #454140;
+    border-bottom: 2px solid #bd5734;
 }
 
-li  {
+#logo {
+    float: left;
+    width: 250px;
+    height: 90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    color: #454140;
+    text-align: center;
+    text-decoration: none;
+    background: #bd5734;
+}
+
+nav {
     float: right;
-    border-right: 1px solid #bd5734;
+    margin-top: 25px;
 }
 
-li:first-child {
-    border-right: none;  
+nav a {
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 15px;
+    line-height: 18px;
+    color: #777777;
+    text-decoration: none;
+    border-left: 1px solid #777777;
 }
 
-li a:hover {
+nav a:first-child {
+    border-left: 0 none;
+}
+
+a:hover {
     background-color: #a79e84;
     color: #454140;
     border-radius: 4px;
+    padding: 5px 10px;
+    margin-left: 3px;
+
 }
 
-li a {
-    display: block;
+footer {
+    padding: 30px;
+    clear: both;
+    font-size: 12px;
     color: #777777;
-    text-decoration: none;
-    padding: 18px 16px;
     text-align: center;
+    background: #454140;
+    border-top: 8px solid #bd5734;
+    height: 50px;
 }
 
-    
-h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 25pt;
-    background: #bd5734;
-    color: #454140;
-    width: 200px;
-    text-align: center;
-    padding: 19px 0;
-    position: absolute;
-    left: 45px;
-    top: -1px;
+#main-container {
+    padding-top: 130px;
+    min-height: calc(100vh-70px);
+    flex: 1;
     
 }
 
-html, body {
-    height: 100%;
-}
-
-
-body {
-    background-image: url("../images/dark-honeycomb.png");
-    display: flex;
-    flex-direction: column;
-}
-
-.wrapper {
-    background: #a79e84;
-    width: 850px; 
+.main-section {
+    width: 100%;
     max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 85px;
-    margin-bottom: 100px;
-    padding: 10px 10px 50px 10px;
-    flex: 1 0 auto;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: #a79e84;
     border: 2px solid #bd5734;
-    
 }
 
 
-h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20pt;
-    font-weight: bold;
-    color: #7a3b2e;
-    padding: 18px 24px;
-    border-bottom: 3px solid #bd5734;
-    margin-bottom: 45px;
-}
 
 label {
     font-size: 20;
@@ -115,6 +136,10 @@ input[type=text], textarea {
     resize: vertical;
 }
 
+.btn {
+    display: flex;
+    justify-content: center;
+}
 
 button[type=submit] {
     background-color: #bd5734;
@@ -126,7 +151,6 @@ button[type=submit] {
     padding: 15px 0;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 20px 0 0 325px;
     width: 150px;
 }
 

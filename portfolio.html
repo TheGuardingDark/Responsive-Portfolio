@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <title>Liv Heller</title>
         <link rel="stylesheet" href="assets/css/reset.css">
-        <link rel="stylesheet" href="assets/css/style2.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style2.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <!-- Background pattern from Toptal Subtle Patterns -->
@@ -13,88 +13,61 @@
 
 <body>
 
-        <header>
-            <nav>
-                <div class="banner">
-                    <h1>Liv Heller</h1>
+        <header id="masthead">
+                <div class="container">
+                    <a href="index.html" id="logo">Liv Heller</a>
         
-                <ul>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="index.html">About</a></li>
-                </ul>
+                    <nav>
+                            <a href="index.html">About</a> 
+                            <a href="portfolio.html">Portfolio</a>
+                            <a href="contact.html">Contact</a> 
+                    </nav>
                 </div>
-            </nav>       
         </header>
 
-<div class="clearfix">
-    <div class="wrapper">
+<div id="main-container" class="container">
+    <section class="main-section">
+            <h1>Portfolio</h1>
         
-        <h2>Portfolio</h2>
-        
-        <div class="container">
-            <div class="row">
-                <div class="column">
-                    <div class="content">
-                        <div class="Box">
-                            <img src="assets/images/abstract.jpg" alt="Abstract">
-                        </div>
-                        <div class="Button1">
-                            <a href="#" target="_blank">Hangman</a>
-                        </div>
-                    </div>
-                </div>
-            <div class="column">
-                <div class="content"> 
-                    <div class="Box">                   
-                        <img src="assets/images/cat.jpg" alt="Cat">
-                    </div>
-                    <div class="Button1"> 
-                        <a href="#" target="_blank">RPG Game</a>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <div class="Box">
-                        <img src="assets/images/deer.jpg" alt="Deer">
-                    </div>
-                    <div class="Button2">
-                        <a href="#" target="_blank">Trivia Game</a>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <div class="Box">
-                        <img src="assets/images/hardware.jpg" alt="Hardware">
-                    </div>
-                    <div class="Button2">
-                        <div class="Rutgers">
-                        <a href="#" target="_blank">Rutgers Info Widget</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="content">
-                <div class="content">
-                    <div class="Box">
-                        <img src="assets/images/water.jpg" alt="Water">
-                    </div>
-                    <div class="Button3">
-                        <a href="#" target="_blank">Rock Paper Scissors</a>
-                    </div>
-                </div>
-            </div>
+        <div class="work">
+             <img src="assets/images/abstract.jpg" alt="Abstract">
+                        
+                <h3><a href="#">Hangman</a></h3>
         </div>
-    </div>
+                    
+               
+        <div class="work">                  
+             <img src="assets/images/cat.jpg" alt="Cat">
+                    
+            <h3><a href="#">RPG Game</a></h3>
+        </div>
+                
+        <div class="work">
+             <img src="assets/images/deer.jpg" alt="Deer">
+                        
+                <h3><a href="#">Trivia Game</a></h3>
+        </div>
+                
+        <div class="work">
+             <img src="assets/images/hardware.jpg" alt="Hardware">
+        
+                <h3><a href="#">Rutgers Info Widget</a></h3>
+        </div>
+                 
+        <div class="work">
+             <img src="assets/images/water.jpg" alt="Water">
+                    
+                <h3><a href="#">Rock Paper Scissors</a></h3>
+        </div>
+    </section>
 </div>
 
-    <footer class="clearfix">
-        <section>
-            <div id="footer">Copyright ©</div>
-        </section>
+    <footer>
+        <div class="container">
+            Copyright &copy;
+        </div>
     </footer>
 
 </body>
+
 </html>
