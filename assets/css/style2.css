@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.banner {
+    background: rgb(65, 63, 63);
+    border-bottom: 3px solid #bd5734;
+    position: relative;
+    padding: 5px 0;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding-bottom: 7px;
+    margin-right: 50px;
+}
+
+li  {
+    float: right;
+    border-right: 1px solid #bd5734;
+}
+
+li:first-child {
+    border-right: none;  
+}
+
+li a:hover {
+    background-color: #a79e84;
+    color: #454140;
+    border-radius: 4px;
+}
+
+li a {
+    display: block;
+    color: #777777;
+    text-decoration: none;
+    padding: 18px 16px;
+    text-align: center;
+}
+
+    
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25pt;
+    background: #bd5734;
+    color: #454140;
+    width: 200px;
+    text-align: center;
+    padding: 19px 0;
+    position: absolute;
+    left: 45px;
+    top: -1px;
+    
+}
+
+html, body {
+    height: 100%;
+}
+
+
+body {
+    background-image: url("../images/dark-honeycomb.png");
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    background: #a79e84;
+    width: 960px; 
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 27px;
+    margin-bottom: 100px;
+    padding: 10px;
+    flex: 1 0 auto;
+    border: 2px solid #bd5734;
+    
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    font-weight: bold;
+    color: #7a3b2e;
+    padding: 18px 24px;
+    border-bottom: 3px solid #bd5734;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 10px;
+
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+.Button1, .Button2, .Button3 {
+    position: absolute;
+    background: #bd5734;
+    height: 100px;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.Button1, .Button2 {
+    width: 454px;
+}
+
+.Button1 {
+    top: 242px;
+
+}
+
+.Button2 {
+    top: 605px;
+}
+
+.Button3 {
+    width: 949px;
+    bottom: 40px;
+
+}
+
+
+div > a {
+    color: #454140;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    text-decoration: none;
+    font-weight: bold;  
+}
+
+
+.column a:hover, .content a:hover {
+    background-color: #7a3b2e;
+    color: #777777;
+    padding: 25px 80px;
+    border-radius: 15px;
+}
+
+.Rutgers a:hover {
+    padding: 25px 35px;
+}
+
+
+#footer {
+    flex-shrink: 0;
+    background: #bd5734;
+    border-top: 8px solid #7a3b2e; 
+    padding-top: 50px;
+    padding-bottom: 5px;
+    margin-top: auto;
+    text-align: center;
+
+}
+
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 640px) {
+    
+}

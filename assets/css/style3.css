@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.banner {
+    background: rgb(65, 63, 63);
+    border-bottom: 3px solid #bd5734;
+    position: relative;
+    padding: 5px 0;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding-bottom: 7px;
+    margin-right: 50px;
+}
+
+li  {
+    float: right;
+    border-right: 1px solid #bd5734;
+}
+
+li:first-child {
+    border-right: none;  
+}
+
+li a:hover {
+    background-color: #a79e84;
+    color: #454140;
+    border-radius: 4px;
+}
+
+li a {
+    display: block;
+    color: #777777;
+    text-decoration: none;
+    padding: 18px 16px;
+    text-align: center;
+}
+
+    
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25pt;
+    background: #bd5734;
+    color: #454140;
+    width: 200px;
+    text-align: center;
+    padding: 19px 0;
+    position: absolute;
+    left: 45px;
+    top: -1px;
+    
+}
+
+html, body {
+    height: 100%;
+}
+
+
+body {
+    background-image: url("../images/dark-honeycomb.png");
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    background: #a79e84;
+    width: 850px; 
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 85px;
+    margin-bottom: 100px;
+    padding: 10px 10px 50px 10px;
+    flex: 1 0 auto;
+    border: 2px solid #bd5734;
+    
+}
+
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    font-weight: bold;
+    color: #7a3b2e;
+    padding: 18px 24px;
+    border-bottom: 3px solid #bd5734;
+    margin-bottom: 45px;
+}
+
+label {
+    font-size: 20;
+    color: #7a3b2e;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bd5734;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+button[type=submit] {
+    background-color: #bd5734;
+    color: #454140;
+    text-align: center;
+    font-size: 18pt;
+    border-radius: 4px;
+    border: none;
+    padding: 15px 0;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 20px 0 0 325px;
+    width: 150px;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span::after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span::after {
+    opacity: 1;
+    right: 0;
+}
+
+.footer {
+    flex-shrink: 0;
+    background: #bd5734;
+    border-top: 8px solid #7a3b2e; 
+    padding-top: 50px;
+    padding-bottom: 5px;
+    margin-top: auto;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 640px) {
+    
+}
